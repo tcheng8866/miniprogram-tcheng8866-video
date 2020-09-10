@@ -9,7 +9,7 @@
 	vertical-align: middle;
 	word-wrap: break-word;
 	margin: 0 auto;
-  padding: 0 20rpx
+	padding: 0 20rpx
 }
 
 /* 内间距 */
@@ -25,14 +25,6 @@
 /* 居中 */
 .center {
 	text-align: center;
-}
-
-/* else 公共提示语 */
-.notice {
-	display: none;
-	text-align: center;
-	height: 500rpx;
-	line-height: 500rpx;
 }
 
 /* flex 布局 */
@@ -75,7 +67,7 @@
 
 /* 首行缩进 */
 .indent {
-	text-indent: 33px;
+	text-indent: 34px;
 }
 
 /* 靠左定位下的左右居中 */
@@ -103,7 +95,6 @@
 	color: white;
 	background-color: #1F2D3D;
 }
-
 .share::after {
 	content: none
 }

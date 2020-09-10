@@ -1,4 +1,20 @@
-<view class="container">
-<!-- 	<view class="block-title">热门投票</view> -->
-	<vote-list id="voteList"></vote-list>
+<view wx:for="{{videos}}" wx:for-item="course" class='course-pannle-item' wx:for-index="idx">
+	<view class='video-item'>
+		<video wx:if='{{idx==playIndex}}' id='video{{idx}}' autoplay='{{true}}' show-center-play-btn="{{false}}" src='{{course.videoUrl}}'
+		 controls="true" objectFit="cover">
+		</video>
+		<image class='video-cover' wx:if='{{idx!=playIndex}}' mode='widthFix' src='{{course.coverUrl}}'></image>
+		<image class='video-play-btn' wx:if='{{idx!=playIndex}}' mode='widthFix' data-index='{{idx}}' bindtap='videoPlay' src='http://119.45.210.92:9100/cover.jpg'></image>
+		<text wx:if='{{idx!=playIndex}}' class='video-duration fs-28'>{{course.duration}}</text>
+	</view>
 </view>
+
+
+<!-- <view wx:for="{{videos}}" wx:for-item="item" wx:for-index="index" class='list' >
+	<view class='item'>
+		<video wx:if='{{index==playIndex}}' src='{{course.videoUrl}}' id='video{{index}}'></video>
+		<image class='video-cover' wx:if='{{index!=playIndex}}' mode='widthFix' src='{{item.coverUrl}}'></image>
+		<image class='video-play-btn' wx:if='{{index!=playIndex}}' mode='widthFix' data-index='{{index}}' bindtap='videoPlay' src='http://119.45.210.92:9100/cover.jpg'></image>
+		<text wx:if='{{index!=playIndex}}' class='video-duration fs-28'>{{item.duration}}</text>
+	</view>
+</view> -->

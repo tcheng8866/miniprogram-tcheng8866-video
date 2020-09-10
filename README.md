@@ -8,4 +8,6 @@
 
 ## 视频小程序
 
+cover-view、cover-image 这两类覆盖组件用于显示在一些特殊组件上方（map、video、canvas、camera、live-player、live-pusher）。
+
 

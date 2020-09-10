@@ -7,7 +7,7 @@ Page({
 			gender: 1, // 1 男; 2 女
 			country: '中华人民共和国共和国',
 			province: '陕西省',
-			city: '商洛市'			
+			city: '商洛市'
 		},
 	},
 	// 没有授权是可以操作数据库、云函数的、有openid
@@ -18,15 +18,15 @@ Page({
 				console.log("authSetting", res.authSetting)
 				if (res.authSetting['scope.userInfo']) {
 					app.globalData.getUserInfoPromise()
-					.then(res=> {
-						app.globalData.userInfo = res.userInfo
-						this.setData({
-							userInfo: res.userInfo
+						.then(res => {
+							app.globalData.userInfo = res.userInfo
+							this.setData({
+								userInfo: res.userInfo
+							})
+							console.log("初始化更新", app.globalData.userInfo)
+						}).catch(e => {
+							console.log("promise fail", e)
 						})
-						console.log("初始化更新", app.globalData.userInfo)
-					}).catch(e => {
-						console.log("promise fail", e)
-					})
 				}
 			}
 		})
@@ -46,5 +46,5 @@ Page({
 			}
 		})
 	},
-  onShareAppMessage: function (res) {}
+	onShareAppMessage: function(res) {}
 })
