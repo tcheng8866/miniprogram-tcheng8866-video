@@ -1,30 +1,59 @@
-.video-item{
-  position: relative;
-  width: 100%;
-  height: 420rpx;
+.container {}
+
+.item {
+	position: relative;
 }
-video{
-  width: 100%;
-  height: 100%;
+
+.play {
+	position: absolute;
+	width: 150rpx;
+	height: 150rpx;
 }
-.video-cover{
-  position: absolute;
-  left: 0;
-  top: 0
+
+.duration {
+	position: absolute;
+	right: 30rpx;
+	bottom: 30rpx;
+	color: #fff;
 }
-.video-play-btn{
-  position: absolute;
-  width: 120rpx;
-  height: 120rpx;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  margin: auto
+
+.business {
+	position: relative;
+	padding: 5rpx 20rpx 15rpx;
 }
-.video-duration{
-  position: absolute;
-  right: 10px;
-  bottom: 10px;
-  color: #fff;
+
+.authorImage {
+	width: 80rpx;
+	height: 80rpx;
+	border-radius: 100rpx;
+	margin-right: 30rpx;
+	float: left;
+}
+
+.author {
+	float: left;
+	margin-top: 18rpx;
+}
+
+.shareBtn {
+	padding: 0 30rpx;
+	background-color: #1AFA29;
+	color: white;
+	border-radius: 50rpx;
+	/* 覆盖button默认样式 */
+	line-height: 40rpx;
+	margin: 0;
+}
+
+.weixin {
+	width: 60rpx;
+	height: 60rpx;
+	margin-right: 20rpx;
+	float: left;
+	margin-top: 10rpx;
+}
+
+.share {
+	float: left;
+	margin-top: 18rpx;
 }

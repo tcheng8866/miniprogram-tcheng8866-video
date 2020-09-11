@@ -1,0 +1,8 @@
+.container{}
+.item{
+  position: relative;
+  width: 100%;
+}
+.video{
+  width: 100%;
+}

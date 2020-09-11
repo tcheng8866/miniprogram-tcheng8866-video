@@ -1,20 +1,19 @@
-<view wx:for="{{videos}}" wx:for-item="course" class='course-pannle-item' wx:for-index="idx">
-	<view class='video-item'>
-		<video wx:if='{{idx==playIndex}}' id='video{{idx}}' autoplay='{{true}}' show-center-play-btn="{{false}}" src='{{course.videoUrl}}'
-		 controls="true" objectFit="cover">
-		</video>
-		<image class='video-cover' wx:if='{{idx!=playIndex}}' mode='widthFix' src='{{course.coverUrl}}'></image>
-		<image class='video-play-btn' wx:if='{{idx!=playIndex}}' mode='widthFix' data-index='{{idx}}' bindtap='videoPlay' src='http://119.45.210.92:9100/cover.jpg'></image>
-		<text wx:if='{{idx!=playIndex}}' class='video-duration fs-28'>{{course.duration}}</text>
+<view class="container">
+	<view wx:for="{{list}}" wx:for-item="item" wx:for-index="index" class="list">
+		<view class="item" bindtap="toDetail" data-item="{{item}}">
+			<image class="cover" src="{{item.coverUrl}}"></image>
+			<image class="play transform" src="{{play}}"></image>
+			<view class="duration">{{item.duration}}</view>
+		</view>
+		<view class="business between">
+			<view class="authorBtn">
+				<image class="authorImage" src="{{item.authorImage}}"></image>
+				<view class="author">{{item.author}}</view>
+			</view>
+			<button class='shareBtn' id="shareBtn" open-type="share" type="primary" hover-class="other-button-hover">
+				<image class="weixin" src="{{weixin}}"></image>
+				<view class="share">分享</view>
+			</button>
+		</view>
 	</view>
 </view>
-
-
-<!-- <view wx:for="{{videos}}" wx:for-item="item" wx:for-index="index" class='list' >
-	<view class='item'>
-		<video wx:if='{{index==playIndex}}' src='{{course.videoUrl}}' id='video{{index}}'></video>
-		<image class='video-cover' wx:if='{{index!=playIndex}}' mode='widthFix' src='{{item.coverUrl}}'></image>
-		<image class='video-play-btn' wx:if='{{index!=playIndex}}' mode='widthFix' data-index='{{index}}' bindtap='videoPlay' src='http://119.45.210.92:9100/cover.jpg'></image>
-		<text wx:if='{{index!=playIndex}}' class='video-duration fs-28'>{{item.duration}}</text>
-	</view>
-</view> -->

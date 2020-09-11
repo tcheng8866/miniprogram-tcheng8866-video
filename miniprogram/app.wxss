@@ -9,17 +9,10 @@
 	vertical-align: middle;
 	word-wrap: break-word;
 	margin: 0 auto;
-	padding: 0 20rpx
 }
-
-/* 内间距 */
-.content {
-	padding: 10rpx 20rpx;
-}
-
-/* 内间距- */
-.content-width {
-	padding: 0 20rpx;
+/* 图片宽度占满 */
+image {
+	width: 100%;
 }
 
 /* 居中 */
@@ -71,6 +64,13 @@
 }
 
 /* 靠左定位下的左右居中 */
+.transform {
+	transform: translate(-50%, -50%);
+	left: 50%;
+	top: 50%;
+	position: relative;
+}
+/* 靠左定位下的左右居中 */
 .transform-x {
 	transform: translate(-50%, 0%);
 	left: 50%;
@@ -87,7 +87,7 @@
 }
 
 /* 分享按钮/其他原生按钮可用 */
-.share {
+.btn-big {
 	margin-top: 50rpx;
 	width: 200rpx;
 	border-radius: 10rpx;
@@ -95,7 +95,7 @@
 	color: white;
 	background-color: #1F2D3D;
 }
-.share::after {
+.btn-big::after {
 	content: none
 }
 

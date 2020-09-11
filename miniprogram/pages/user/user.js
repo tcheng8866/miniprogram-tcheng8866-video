@@ -3,7 +3,7 @@ Page({
 	data: {
 		userInfo: {
 			nickName: '点击获取图像',
-			avatarUrl: '/images/user.jpg',
+			avatarUrl: '/images/denglu.png',
 			gender: 1, // 1 男; 2 女
 			country: '中华人民共和国共和国',
 			province: '陕西省',
