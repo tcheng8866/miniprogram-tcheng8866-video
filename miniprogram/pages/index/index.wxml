@@ -1,6 +1,7 @@
 <view class="container">
-	<view wx:for="{{list}}" wx:for-item="item" wx:for-index="index" class="list">
+	<view wx:for="{{list}}" wx:for-item="item" wx:for-index="index" class="wrap">
 		<view class="item" bindtap="toDetail" data-item="{{item}}">
+			<view class="title">{{item.title}}</view>
 			<image class="cover" src="{{item.coverUrl}}"></image>
 			<image class="play transform" src="{{play}}"></image>
 			<view class="duration">{{item.duration}}</view>

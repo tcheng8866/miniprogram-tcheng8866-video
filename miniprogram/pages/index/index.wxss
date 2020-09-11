@@ -1,9 +1,20 @@
-.container {}
-
+.container {
+	background-color: #F6F6F6;
+}
+.wrap{
+  margin-bottom: 25rpx;
+	background-color: white;
+}
 .item {
 	position: relative;
 }
-
+.title{
+	position: absolute;
+	margin-top: 16rpx;
+	margin-left: 16rpx;
+	color: white;
+	font-size: 36rpx;
+}
 .play {
 	position: absolute;
 	width: 150rpx;
