@@ -3,7 +3,8 @@ Page({
 	data: {
 		play: '/images/bofang.png',
 		weixin: '/images/weixin.png',
-		list: []
+		list: [],
+		introduceShow: false
 	},
 	onLoad: function(options) {
 		this.getList()
@@ -11,8 +12,14 @@ Page({
 	async getList() {
 		const db = wx.cloud.database()
 		await db.collection("videos").get().then(res => {
+			const list = res.data
+			if (list.length == 0 ) {
 			this.setData({
-				list: res.data
+				introduceShow: true
+			})
+			}
+			this.setData({
+				list
 			})
 		}).catch(err => {
 			console.log(err)

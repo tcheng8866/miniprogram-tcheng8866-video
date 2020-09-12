@@ -17,4 +17,16 @@
 			</button>
 		</view>
 	</view>
+	<view wx:if="{{introduceShow}}" class="introduce">
+		<text decode="{{true}}" space="{{true}}">&ensp;&ensp;&ensp;&ensp;秦腔又称乱弹，源于西秦腔，流行于我国西北地区的陕西、甘肃、青海、宁夏、新疆等地区。秦腔主要是要吼起来，其特点是高昂激越、强烈急促。尤其是花脸的演唱，更是撕扯嗓子吼唱，很有地域特点，
+			&ensp;&ensp;&ensp;&ensp;秦腔的唱腔包括板路和彩腔两部分，每部分均有欢音和苦音之分。苦音腔最能代表 秦腔 特色，深沉哀婉、慷慨激越，适合表现悲愤、怀念、凄哀的感情。陕西秦腔代表陕西民俗文化，
+			&ensp;&ensp;&ensp;&ensp;其要求演员用真嗓音演唱，所以保持了原始豪放的特点，角色可分为：老旦、正旦、小旦、花旦、老生、小生、黑头、花脸等，是陕西这块文明沃土蕴藏的中华民族物质和精神的瑰宝，一直是陕西人的文化遗产的值得骄傲的财富。
+			\t
+		</text>
+		<view class="desc">秦腔剧照</view>
+		<image src="/images/introduce/introduce1.jpg"></image>
+		<view class="desc">二进宫</view>
+		<image src="/images/introduce/introduce2.jpg"></image>
+		<view class="desc">铡美案</view>
+	</view>
 </view>
