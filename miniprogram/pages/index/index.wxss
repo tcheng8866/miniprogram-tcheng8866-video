@@ -68,12 +68,3 @@
 	float: left;
 	margin-top: 18rpx;
 }
-
-
-.introduce{
-	padding: 0 20rpx;
-}
-
-.desc {
-	padding: 10rpx;
-}

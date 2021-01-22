@@ -4,4 +4,5 @@
 		<button class="name" open-type="getUserInfo" hover-class='none' bindgetuserinfo="getUserInfoFun">{{userInfo.nickName}}</button>
 	</view>
 	<button class="btn" open-type="contact">联系客服</button>
+	<image src="/images/zanshang.jpg" style="width: 100%;" title="" />
 </view>
